@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Checkout System</title> 
+    <link rel="stylesheet" href="checkout.css">
+    
+</head>
+<body>
+    <main class="container">
+        <div class="card">
+            <h1 class="header">Smart Cheout System</h1>
+            <span>
+            <badge class="badge">Secure</badge>
+            </span>
+
+            <label> Cart Total: </label>
+                <input type="number" id = "cartTotal" placeholder="180">
+
+            <div class="row">
+                <select id="membership">
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                    <option value="vip">VIP</option>
+                </select>
+
+                <select id="coupon">
+                    <option value="yes">yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button id="calcBtn" class="btn">Calculate Total</button>
+
+                <p class="message" id="message"></p>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h1 class="header">Order Summary</h1>
+            <span>
+                <badge class="badge"></badge>
+            </span>
+            <div class="line">
+               Subtotal: <span id="subtotalText">$0.00</span>
+            </div>
+            <div class="line">
+                Discount: <span id="discountText">$0.00</span>
+            </div>
+            <div class="line">
+                Shipping: <span id="shippingText">$0.00</span>
+            </div>
+            <div class="line">
+                Final Total: <span class="total" id="finalTotalText">$0.00</span>
+            </div>
+            <p class="note">
+                -Premium gets 15% off<br>
+                -VIP gets 25% off<br>
+                -Coupon adds extra 10% off<br>
+                -Orders >= $150 ship free
+            </p>
+        </div>
+    </main>
+    <script src="checkout.js"></script>
+</body>
+</html>

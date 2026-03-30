@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local Storage Homework - Favorite Quote Saver</title>
+    <link rel="stylesheet" href="quotSave.css" />
+</head>
+<body>
+<main class="page">
+    <section class="card">
+        <h1 class="card-title">Favorite Quote Saver</h1>
+        <p class="card-subtitle">
+          Your favorite quote will be saved in your browser and suurvive pare refreshes.
+        </p>
+        
+        <div class="field">
+            <label for="quoteInput">Your Favorite Quote</label>
+            <textarea id="quoteInput" class="textarea" rows="4"></textarea>
+        </div>
+
+        <div class="button-row">
+            <button id="saveQuoteBtn" class="btn primary">Save Quote</button>
+            <button id="clearQuoteBtn" class="btn ghost">Clear Quote</button>
+        </div>
+
+        <div class="display-block">
+            <h2>Saved Quote</h2>
+            <p id="quoteDisplay" class="quote-display"></p>
+        </div>
+
+        <p class="hint">Refresh the page - your Quote stays!</p>    
+    </section>
+</main>
+<script src="quotSave.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+*{
+    border-radius: 15xp;
+}
+
+.h1 {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 15px;
+
+}
+.Main-Container {
+    display: flex;
+    flex-flow: flex-end;
+    justify-content: end;
+    padding: 10px;
+}
+.Select {
+    height: auto;
+    padding: 15px;
+    margin: 5px;
+    border-radius:5px;
+    background-color: gainsboro;
+}
+.About {
+    height: auto;
+    padding: 15px;
+    margin: 5px;
+    border-radius:5px;
+    background-color: gainsboro;
+}
+.Menu {
+    height: auto;
+    padding: 15px;
+    margin: 5px;
+    border-radius:5px;
+    background-color: gainsboro;
+}
+.Second-Container{
+    display:flex;
+    flex-flow: row;
+    row-gap: 25px;
+    padding: 5px;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: rgb(0, 225, 255);
+}
+.child3 {
+    display: flex;
+}

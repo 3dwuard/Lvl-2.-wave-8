@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Threat Detector</title>
+    <link rel="stylesheet" href="threat.css">
+</head>
+<body>
+    <!-- This mini project simulates a security sistem that evaluates login attempts and returns a risk decision -->
+<main class="container">
+    <section class="card">
+        <div class="header">
+        <h1>Login Threat Detector</h1>
+        <span class="badge">Security Scan</span>
+        </div>
+
+        <label for="failedAttempts">Failed Attempts</label>
+        <input id="failedAttempts" type="number" placeholder="3">
+
+        <div class="row">
+            <div>
+                <label for="unusualLocations">Usual Location</label>
+                <select id="unusualLocations">
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div>
+                <label for="recognizedDevice">Recognized Device</label>
+                <select id="recognizedDevice">
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+                </div>
+                <button id="scanBtn" class="btn">Run Security Scan</button>
+                <p id="message" class="message"></p>
+                </section>
+                </div>
+        </div>
+   <aside class="card">
+<div class="header">
+<h1>Threat Status</h1>
+<span class="badge"> Report<span>
+</div>
+<div class="statusBox">
+    <p class="statusTitle">
+        Result <span id="statusText" class="warn">-</span>
+    </p>
+<p id="statusDetails" class="note">
+Run a scan to see a security decision based on your inputs
+</p>
+</div>
+<div class="kv">
+    <span>Failed Attempts</span>
+    <strong id="attemptOut">-<strong>
+</div>
+<div class="kv">
+    <span>Unusual Location</span>
+    <strong id="locationOut"></strong>
+</div>
+<div class="kv">
+    <span> Recognized Device</span>
+    <strong id="deviceOut"></strong>
+</div>
+
+<p class="note">
+    Decision Rules: 5+ failed attempts locks the account. Unusual location + unreconginzed device triggets suspicious status. 
+</p>
+</aside>
+
+
+   </aside>
+<script src="threat.js"></script>
+</body>
+</html>
